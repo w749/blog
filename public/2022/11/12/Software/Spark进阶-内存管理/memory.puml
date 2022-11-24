@@ -1,0 +1,8 @@
+@startuml BlockManager-putBytes
+title <color red><size:25>BlockManager.putBytes</size></color>
+TorrentBroadcast -> BlockManager: putBytes
+BlockManager -> ByteBufferBlockStoreUpdater: save
+ByteBufferBlockStoreUpdater -> ByteBufferBlockStoreUpdater: saveSerializedValuesToMemoryStore
+ByteBufferBlockStoreUpdater -> MemoryStore: putBytes
+MemoryStore -> MemoryManager: acquireStorageMemory (<color red>Request a specified amount of memory</color>)
+@enduml
