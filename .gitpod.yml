@@ -3,6 +3,12 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: npm install && npm run build
-
+  - name: Init
+    init: |
+      npm config set registry http://registry.npm.taobao.org/ 
+      npm install hexo-theme-melody
+      npm install hexo-renderer-pug hexo-renderer-stylus
+      npm install hexo-renderer-marked
+      npm install hexo-wordcount --save
+      npm install hexo-algoliasearch --save
 
