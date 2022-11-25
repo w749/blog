@@ -104,9 +104,9 @@ theme: melody
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: 'git'
-  repo: root@8.131.90.208:/var/repo/blog.git
+# deploy:
+#   type: 'git'
+#   repo: root@8.131.90.208:/var/repo/blog.git
 
 # search:
 #   path: search.xml
