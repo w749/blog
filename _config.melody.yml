@@ -68,7 +68,7 @@ social:
   github fa: https://github.com/wxk749
   github-alt fa: https://gitee.com/wang749
   rss fa: https://blog.csdn.net/m0_61192794
-  fa-person-running: https://run.wangxukun.top/
+  # fa-person-running: https://run.wangxukun.top/
 #icon_name fab: url
 
 # Algolia search
