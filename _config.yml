@@ -8,7 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: WangXun
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -100,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: melody
+theme: keep
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -143,6 +143,9 @@ algolia:
 #   npm install hexo-renderer-marked
 #   npm install hexo-wordcount --save
 #   npm install hexo-algoliasearch --save
+#   npm install hexo-wordcount
+#   npm install hexo-theme-keep
+#   npm install hexo-generator-searchdb
 
 # theme静态资源路径在/node_modules/hexo-theme-melody/source/目录下
 # 网站相关配置在_config.yml文件中修改，theme相关配置在_config.melody.yml文件中修改
