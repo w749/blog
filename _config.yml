@@ -129,8 +129,6 @@ algolia:
     - tags
     - title
 
-all_minifier: true
-
 
 # 新环境配置步骤：
 # 
