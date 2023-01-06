@@ -1,7 +1,8 @@
 ---
 title: Flume简单应用
 author: 汪寻
-date: 2021-04-13
+date: 2021-04-13 16:20:18
+update: 2021-04-13 16:34:10
 tags:
  - ETL
 categories:

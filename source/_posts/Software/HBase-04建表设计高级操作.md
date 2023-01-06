@@ -1,7 +1,8 @@
 ---
 title: HBase-04建表设计高级操作
 author: 汪寻
-date: 2022-02-21
+date: 2022-02-21 10:29:16
+update: 2022-02-21 10:53:44
 tags:
  - HBase
 categories:

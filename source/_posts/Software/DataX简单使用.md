@@ -1,7 +1,8 @@
 ---
 title: DataX简单使用
 author: 汪寻
-date: 2021-07-23
+date: 2021-07-23 18:12:42
+update: 2021-07-23 18:38:18
 tags:
  - ETL
 categories:

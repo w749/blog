@@ -1,7 +1,8 @@
 ---
 title: Vuepress操作说明
 author: 汪寻
-date: 2019-01-01
+date: 2019-01-01 13:15:43
+update: 2019-01-01 13:38:20
 tags:
  - Other
 categories:
@@ -87,7 +88,8 @@ module.exports = {
 ---
 title: 文章标题
 author: 汪寻
-date: 2021-09-15
+date: 2019-01-01 13:15:43
+update: 2019-01-01 13:38:20
 tags:
  - Other
 categories:

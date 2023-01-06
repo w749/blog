@@ -1,7 +1,8 @@
 ---
 title: Hadoop-Yarn资源调度器了解
 author: 汪寻
-date: 2021-12-06
+date: 2021-12-06 19:19:39
+update: 2021-12-06 19:53:18
 tags:
  - Hadoop
 categories:

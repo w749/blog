@@ -1,7 +1,8 @@
 ---
 title: HDFS架构及基础命令
 author: 汪寻
-date: 2021-05-04
+date: 2021-05-04 12:15:29
+update: 2021-05-04 12:51:29
 tags:
  - Hadoop
 categories:

@@ -1,7 +1,8 @@
 ---
 title: MySQL常用操作命令
 author: 汪寻
-date: 2019-11-05
+date: 2019-11-05 21:11:27
+update: 2019-11-05 21:37:17
 tags:
  - SQL
 categories:

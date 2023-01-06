@@ -1,7 +1,8 @@
 ---
 title: Logstash简单应用
 author: 汪寻
-date: 2021-04-08
+date: 2021-04-08 12:21:47
+update: 2021-04-08 12:38:44
 tags:
  - ETL
 categories:

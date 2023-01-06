@@ -1,7 +1,8 @@
 ---
 title: Flume深入理解
 author: 汪寻
-date: 2021-04-14
+date: 2021-04-14 12:13:40
+update: 2021-04-14 12:37:43
 tags:
  - ETL
 categories:

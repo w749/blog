@@ -1,7 +1,8 @@
 ---
 title: Docker WordPress的Nginx应用
 author: 汪寻
-date: 2021-03-31
+date: 2021-03-31 11:21:48
+update: 2021-03-31 11:37:22
 tags:
  - Docker
 categories:
