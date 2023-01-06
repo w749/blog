@@ -101,7 +101,7 @@ social_contact:
     # If you want to click open the picture, you need to add a prefix "img |",
     # at the same time change your link to the image link.
     # e.g. [ weixin: img | https://x.com/images/wechat.png ] or [ weixin: img | ./images/wechat.png ]
-    github: https://github.com/wxk749         # GitHub
+    github: https://github.com/w749         # GitHub
     weixin:          # WeChat
     qq:              # QQ
     weibo:           # WeiBo
