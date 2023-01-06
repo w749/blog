@@ -1,8 +1,8 @@
 ---
 title: Oozie-入门基础
 author: 汪寻
-date: 2022-04-20 14:20:36
-update: 2022-04-20 14:31:17
+date: 2022-04-20 16:28:31
+updated: 2022-04-20 16:55:36
 tags:
  - Oozie
 categories:

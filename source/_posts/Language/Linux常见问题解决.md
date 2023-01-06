@@ -1,8 +1,8 @@
 ---
 title: Linux常见问题解决
 author: 汪寻
-date: 2019-08-07 10:20:13
-update: 2019-08-07 10:33:29
+date: 2019-08-07 13:26:42
+updated: 2019-08-07 13:36:53
 tags:
  - Linux
 categories:

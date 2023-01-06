@@ -1,8 +1,8 @@
 ---
 title: Linux常用命令
 author: 汪寻
-date: 2019-08-07 16:25:46
-update: 2019-08-07 16:43:38
+date: 2019-08-07 17:23:23
+updated: 2019-08-07 17:44:34
 tags:
  - Linux
 categories:

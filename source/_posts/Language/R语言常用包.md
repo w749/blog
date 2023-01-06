@@ -1,8 +1,8 @@
 ---
 title: R语言常用包
 author: 汪寻
-date: 2020-08-22 17:20:47
-update: 2020-08-22 17:32:21
+date: 2020-08-22 10:28:29
+updated: 2020-08-22 10:53:42
 tags:
  - R
 categories:

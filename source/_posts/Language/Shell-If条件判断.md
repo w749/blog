@@ -1,8 +1,8 @@
 ---
 title: Shell-If条件判断
 author: 汪寻
-date: 2022-09-16 15:11:54
-update: 2022-09-16 15:31:12
+date: 2022-09-16 12:12:27
+updated: 2022-09-16 12:55:19
 tags:
   - Linux
 categories:

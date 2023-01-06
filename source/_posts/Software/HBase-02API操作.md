@@ -1,8 +1,8 @@
 ---
 title: HBase-02API操作
 author: 汪寻
-date: 2022-02-15 11:25:43
-update: 2022-02-15 11:43:57
+date: 2022-02-15 10:14:30
+updated: 2022-02-15 10:46:44
 tags:
  - HBase
 categories:

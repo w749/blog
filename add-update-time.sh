@@ -26,8 +26,8 @@ do
     new_update="${old_date} ${hour}:${min_update}:${second_update}"
 
     sed -i "s/date: .*/date: ${new_date}/g" ${md}
-    sed -i "/update: /d" ${md}
-    sed -i "/date: /a\update: ${new_update}" ${md}
+    sed -i "/updated: /d" ${md}
+    sed -i "/date: /a\updated: ${new_update}" ${md}
     echo "更新文件：${md}，创建时间：${new_date}，更新时间：${new_update}"
 done
 

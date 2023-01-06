@@ -1,8 +1,8 @@
 ---
 title: Filebeat简单应用
 author: 汪寻
-date: 2021-03-31 17:19:40
-update: 2021-03-31 17:57:38
+date: 2021-03-31 19:21:32
+updated: 2021-03-31 19:36:57
 tags:
  - ETL
 categories:
