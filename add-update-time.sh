@@ -1,4 +1,7 @@
 #!/bin/bash
+# 解决vercel自动部署时自动生成update时间的问题
+# 获取文章"date: "标签的"yyyy-MM-dd"日期格式，转换为"yyyy-MM-dd HH:mm:ss"再写回原文章，在"date"行后新增"updated: yyyy-MM-dd HH:mm:ss"，时间比"date"对应的时间晚1-30分钟左右
+
 IFS=$'\n'
 UPDATE_DIR="source/_posts"
 UPDATE_MD=`find ${UPDATE_DIR} -name *.md`
