@@ -2,7 +2,7 @@
 title: Kafka常用命令
 author: 汪寻
 date: 2023-07-17 10:12:43
-updated: 2023-07-17 10:13:43
+updated: 2023-07-20 09:57:22
 tags:
  - Kafka
 categories:
@@ -38,6 +38,31 @@ categories:
 
 9. 增加分区
     `./bin/kafka-topics.sh --alter --zookeeper 10.10.3.10:2181 --topic test --partitions 3`
+
+### 新增broker后重分配
+适用于新增broker节点后需要调整topic分区所属节点的情况，步骤如下：
+1. 创建需要调整的topic配置文件`topics-to-move.json`
+    `{"topics": [{"topic": "test"}],"version":1}`
+
+2. 生成分配计划，注意`--broker-list`参数为新的broker列表
+    `kafka-reassign-partitions --bootstrap-server localhost:9092 --zookeeper zookeeper-001:2181 --topics-to-move-json-file topics-to-move.json --broker-list "1,2,3,4,5,6" --generate`
+
+3. 以上命令会生成如下内容，将 Proposed partition reassignment configuration 下的内容保存为test-reassign.json文件
+    ```json
+    Current partition replica assignment
+ 
+    {"version":1,"partitions":[{"topic":"test","partition":0,"replicas":[5,4,1,2,3],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":5,"replicas":[5,2,3,4,1],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":1,"replicas":[1,5,2,3,4],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":4,"replicas":[4,5,1,2,3],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":3,"replicas":[3,4,5,1,2],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":2,"replicas":[2,1,3,4,5],"log_dirs":["any","any","any","any","any"]}]}
+    
+    Proposed partition reassignment configuration
+    
+    {"version":1,"partitions":[{"topic":"test","partition":4,"replicas":[5,1,2,3,4],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":1,"replicas":[2,4,5,6,1],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":3,"replicas":[4,6,1,2,3],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":0,"replicas":[1,3,4,5,6],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":5,"replicas":[6,2,3,4,5],"log_dirs":["any","any","any","any","any"]},{"topic":"test","partition":2,"replicas":[3,5,6,1,2],"log_dirs":["any","any","any","any","any"]}]}
+    ```
+
+4. 执行分区数据迁移
+    `kafka-reassign-partitions --bootstrap-server localhost:9092 --zookeeper zookeeper-001:2181 --reassignment-json-file test-reassign.json --execute`
+
+5. 检查数据迁移的进度
+    `kafka-reassign-partitions --bootstrap-server localhost:9092 --zookeeper zookeeper-001:2181 --reassignment-json-file test-reassign.json --verify`
 
 ### 消费者组
 1. 查看所有消费者组
